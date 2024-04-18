@@ -139,6 +139,12 @@ Aqui mostrarei meus micro-certificados adquiridos durante esse processo de estud
   <img src="public/certificates/js.png">
 </div>
 
+## Git e Github 
+
+<div align="center">
+  <img src="public/certificates/git-github.png">
+</div>
+
 
 
 
