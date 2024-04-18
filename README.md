@@ -65,7 +65,7 @@ Projeto onde adquiri meus primeiros contatos fundamentais com Java Script, onde 
 </div>
 
 ## Técnica Pomodoro
-Nesse projeto foi desenvolvido um site onde o usuário pode cronometrar o tempo durante seus estudos acompanhado de um áudio de fundo para ajudar na concentração. Nesse projeto, comecei a utilizar o JavaScript de forma mais profissional, usando import/export para importar e exportar funções de arquivos JavaScript, buscando melhorar a estruturação dos dados e também foi o começo dos meus estudos na introdução de áudios em sites.
+Nesse projeto foi desenvolvido um site onde o usuário pode cronometrar o tempo durante seus estudos acompanhado de um áudio de fundo para ajudar na concentração. Nesse projeto, comecei a utilizar o JavaScript de forma mais profissional, usando import/export para importar e exportar funções de arquivos JavaScript, buscando melhorar a estruturação dos dados, foi o começo dos meus estudos na introdução de áudios em sites e aprendizado aprofundado sobre acessibilidade.
 
 ### Ferramentas
 
@@ -103,7 +103,7 @@ Projeto focado em criação de rotas e navegação com JavaScript e introduzimos
 </div>
 
 ## Github Favorites
-Nesse projeto foi introduzido, além do conhecimento sobre SPA, o conhecimento sobre consumo de API e o uso de orientação a objeto em JavaScript
+Nesse projeto foi introduzido, além do conhecimento sobre SPA, o conhecimento sobre consumo de API, o uso de orientação a objeto em JavaScript e a programação assíncrona.
 
 ### Ferramentas
 
@@ -120,3 +120,25 @@ Nesse projeto foi introduzido, além do conhecimento sobre SPA, o conhecimento s
 <div align="center">
   <img src="public/gitFav.png">
 </div>
+
+<br>
+
+# Certificados 👨‍💻
+
+Aqui mostrarei meus micro-certificados adquiridos durante esse processo de estudos no Explorer até atingir a meta que é o certificado de especialista nessas ferramentas.
+
+## HTML e CSS 
+
+<div align="center">
+  <img src="public/certificates/html-css.png">
+</div>
+
+## JavaScript 
+
+<div align="center">
+  <img src="public/certificates/js.png">
+</div>
+
+
+
+
