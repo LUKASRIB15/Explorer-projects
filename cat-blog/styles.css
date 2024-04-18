@@ -1,0 +1,268 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+
+  --color-gray-700: #121214;
+  --color-gray-600: #202024;
+  --color-gray-100: #F4FCFF;
+  --color-blue-300: #387E96;
+  --color-blue-500: #065E7C;
+  --color-blue-700: #063443;
+  --color-white: #FFFFFF;
+}
+
+body{
+  font-size: 1.6rem;
+  color: var(--color-gray-700)
+}
+
+body, button, input, textarea{
+  font-family: 'Mulish', sans-serif;
+}
+
+#page{
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  height: 100vh;
+}
+
+.header, .main, .footer{
+  width: min(430px, 100%);
+  margin: auto;
+}
+
+/* Estilizando Header */
+
+header{
+  background-color: var(--color-blue-500);
+  padding: 1.2rem 2.8rem;
+}
+
+.header{
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.header .input-wrapper{
+  flex: 1;
+
+  & label{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  & input{
+    width: 100%;
+    padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+    background-color: var(--color-blue-300);
+    border: 0;
+    color: var(--color-white);
+    border-radius: 4px;
+  }
+
+  & input:focus{
+    outline: 2px solid var(--color-blue-700);
+  }
+
+  & input::placeholder{
+    color: var(--color-gray-100);
+    font-weight: 600;
+  }
+}
+
+.header img{
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+/* Estilizando main */
+
+.main{
+  display: grid;
+  gap: 3.2rem;
+}
+
+/* section */
+
+section > img{
+  width: 425px;
+  aspect-ratio: 16/9;
+  object-fit: 100%;
+}
+
+section .details{
+  margin: 3.2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  & h2{
+    font-size: 2.4rem;
+  }
+}
+
+
+.details .options{
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.details .options > div{
+  background-color: var(--color-blue-500);
+  width: 4rem;
+  height: 4rem;
+  padding: 1.2rem;
+  border-radius: 999px;
+  cursor: pointer;
+
+  transition: background-color 0.3s, transform 0.5s;
+
+  &:first-child:hover{
+    background-color: #227e22;
+    transform: rotate(360deg) scale(1.2);
+    filter: drop-shadow(0px 0px 8px #227e22);
+  }
+
+  &:last-child:hover{
+    background-color: #ad3b3b;
+    transform: rotate(360deg) scale(1.2);
+    filter: drop-shadow(0px 0px 8px #ad3b3b);
+  }
+}
+
+section .details, section p, aside{
+  padding-inline: 2.2rem;
+}
+
+/* aside */
+aside{
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+aside h2{
+  font-size: 2.4rem;
+  line-height: 1.6;
+  color: var(--color-gray-600);
+}
+
+.article{
+  display: flex;
+  gap:1.6rem;
+  align-items: center;
+
+  transition: all 0.2s;
+}
+
+.article img{
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.article .info{
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  & h3{
+    font-size: 1.8rem;
+    color: var(--color-gray-600);
+    line-height: 1.6;
+  }
+
+  & p{
+    font-size: 1.4rem;
+  }
+}
+
+
+/* Estilizando footer */
+footer{
+  background-color: var(--color-blue-500);
+  padding: 1.6rem;
+  margin-top: 4rem;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+}
+
+.footer p{
+  color: var(--color-white);
+  font-weight: 600;
+
+}
+
+/* Responsividade */
+@media(min-width: 426px){
+  main{
+    margin-top: 4.4rem;
+  }
+
+  .article:hover{
+    scale: 1.1;
+  }
+}
+
+@media(min-width:1024px){
+  .header, .main, .footer{
+    width: min(1219px, 100%);
+    margin: auto;
+  }
+
+  .main{
+    grid-template-columns: 1fr 384px;
+    align-items: start;
+  }
+
+  section .details{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section > img{
+    width: 100%;
+    padding-inline: 2.2rem;
+  }
+
+
+}
+
+@media(min-width:1219px){
+  section .details, section p, aside, section > img{
+    padding-inline: 0;
+  }
+}
+
+/* Animações */
+.article{
+  --delay: 0.4s;
+  animation-name: appear-articles;
+  animation-duration: 0.5s;
+  animation-delay: var(--delay);
+  animation-fill-mode: backwards;
+}
+
+@keyframes appear-articles{
+  0%{
+    opacity: 0;
+  }
+
+  50%{
+    scale: 1.1;
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Temporizador para aumentar seu foco nos estudos">
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/x-svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="src/main.js" type="module" defer></script>
+  <title>Focus Timer 2.0</title>
+</head>
+<body>
+  <div id="app">
+    <main>
+      <div id="timer">
+        <span id="minutes">25</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </div>
+      <section id="controls">
+        <button id="play" class="ph-bold ph-play-circle">
+          <span class="sr-only">Botão de começar</span>
+        </button>
+        <button id="stop" class="ph-bold ph-stop-circle">
+          <span class="sr-only">Botão de parar</span>
+        </button>
+        <button id="increment" class="ph-bold ph-plus-circle">
+          <span class="sr-only">Botão de aumentar um minuto</span>
+        </button>
+        <button id="decrement" class="ph-bold ph-minus-circle">
+          <span class="sr-only">Botão de diminuir um minuto</span>
+        </button>
+      </section>
+    </main>  
+    <aside id="button-sounds">
+      <button id="forest" class="ph ph-tree">
+        <span class="sr-only">Ativar som de floresta</span>
+      </button>
+      <button id="rain" class="ph ph-cloud-rain">
+        <span class="sr-only">Ativar som de chuva</span>
+      </button>
+      <button id="coffee-shop" class="ph ph-storefront">
+        <span class="sr-only">Ativar som de cafeteria</span>
+      </button>
+      <button id="fire-place" class="ph ph-fire">
+        <span class="sr-only">Ativar som de lareira</span>
+      </button>
+    </aside>
+  </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body{
+  background-color: #000000;
+  color: #E1E1E6;
+}
+
+body, button, input{
+  font-size: 1.6rem;
+  font-family: sans-serif;
+}
+
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#app{
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-block: 12rem;
+  padding-inline: 2rem;
+
+  display: grid;
+  gap: 8.8rem;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search{
+  display: flex;
+  gap: 0.8rem;
+}
+
+.search input{
+  background-color: #06181C;
+  padding: 1.6rem;
+  border-radius: 5px;
+  border: 0;
+  width: clamp(200px, 50vw, 462px);
+
+  &::placeholder{
+    color: #7C7C8A;
+  }
+}
+
+.search button{
+  background-color: #065E7C;
+  color: white;
+  border: 0;
+  padding: 1.2rem 3.2rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: all 0.2s;
+
+  &:hover{
+    background-color: white;
+    color: #065E7C;
+  }
+}
+
+
+td#user{
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+#table-container{
+  overflow-y: scroll;
+  height: 688px;
+  width: 100%;
+  border: 1px solid #4A808C;
+  border-radius: 1.2rem;
+}
+
+table{
+  overflow: hidden;
+  border-spacing: 0;
+  border: 1px solid #4A808C;
+  border-radius: 1.2rem;
+}
+
+thead th{
+  background-color: #092D38;
+  padding: 1.6rem 4rem;
+  text-align: left;
+
+  &:first-child{
+    border-top-left-radius: 1.2rem;
+  }
+
+  &:last-child{
+    border-top-right-radius: 1.2rem;
+  }
+}
+
+
+tbody td{
+  padding: 2.4rem 4rem;;
+  border-bottom: 1px solid #4A808C;
+}
+
+tbody tr:nth-child(even){
+  background-color: #06181C;
+}
+
+td#user a{
+  color: #E1E1E6;
+  text-decoration: none;
+}
+
+td#user img{
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+.remove{
+  background-color: transparent;
+  border: 0;
+  color: #F75A68;
+  cursor: pointer;
+  line-height: 0;
+  font-weight: bold;
+}

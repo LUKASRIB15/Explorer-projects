@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="src/main.js" type="module" defer></script>
+  <title>GitFav</title>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <img src="./images/logo.svg" alt="Logo Gitfav"/>
+      <div class="search">
+        <label class="sr-only" for="input-search">Digite o Github que quer favoritar</label>
+        <input id="input-search" placeholder="Digite o Github que quer favoritar"/>
+        <button>
+          &#10025;
+          Favoritar
+        </button>
+      </div>
+    </header>
+      <table>
+        <thead>
+          <tr>
+            <th>Usuário</th>
+            <th>Repositórios</th>
+            <th>Seguidores</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody class="empty">
+          <tr>
+            <td id="user">
+              <img src="https://github.com/LUKASRIB15.png" alt="Imagem de perfil do github do LUKASRIB15" />
+              <div>
+                <p>Lucas Ribeiro</p>
+                <a href="https://github.com/LUKASRIB15">/LUKASRIB15</a>
+              </div>
+            </td>
+            <td id="repositories">123</td>
+            <td id="followers">1234</td>
+            <td>
+              <button class="remove">Remover</button>
+            </td>
+          </tr>
+          <tr>
+            <td id="user">
+              <img src="https://github.com/LUKASRIB15.png" alt="Imagem de perfil do github do LUKASRIB15" />
+              <div>
+                <p>Lucas Ribeiro</p>
+                <a href="https://github.com/LUKASRIB15">/LUKASRIB15</a>
+              </div>
+            </td>
+            <td id="repositories">123</td>
+            <td id="followers">1234</td>
+            <td>
+              <button class="remove">Remover</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</body>
+</html>

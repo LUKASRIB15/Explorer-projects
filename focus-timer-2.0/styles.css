@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: clamp(40%, 1% + 1vw, 62.5%);
+}
+
+body{
+  background-color: #FFFFFF;
+  color: #323238;
+
+  display: grid;
+  height: 100vh;
+  place-content: center;
+
+}
+
+#app{
+  display: flex;
+  gap: 19.2rem;
+  align-items: center;
+}
+
+#timer span{
+  font-family: sans-serif;
+  font-size: 12.8rem;
+  font-weight: 500;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-between;
+
+  & button{
+    background-color: transparent;
+    border: 0;
+    font-size: 4.8rem;
+    color: #323238;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 0;
+  }
+}
+
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+
+#button-sounds{
+  display: flex;
+  justify-content: center;
+  max-width: 308px;
+  flex-wrap: wrap;
+  gap: 3.2rem;
+}
+
+button{
+  padding: 4.8rem;
+  font-size: 4rem;
+  border: 0;
+  border-radius: 2.4rem;
+  background-color: #E1E1E6;
+  color: #323238;
+  cursor: pointer;
+}
+
+.button-active{
+  background-color: #02799D;
+  color: #FFFFFF;
+}
